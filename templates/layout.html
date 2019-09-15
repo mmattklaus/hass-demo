@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The HASS</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+	<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark">
+  		<a class="navbar-brand" href="#">HASS</a>
+  		<div class="collapse navbar-collapse" id="navbarSupportedContent"> </div>
+	</nav>
+	{% block body %}
+		<div class="container">
+			<h5 class="alert alert-warning">
+				No content added yet!
+			</h5>
+		</div>
+	{% endblock %}
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }} "></script>
+	<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/js/bootstrap4-toggle.min.js"></script>
+	{% block scripts %}{%endblock%}
+</body>
+</html>
